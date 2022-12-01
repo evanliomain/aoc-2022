@@ -1,0 +1,23 @@
+{
+  // See http://go.microsoft.com/fwlink/?LinkId=827846
+  // for the documentation about the extensions.json format
+  "recommendations": [
+    // Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+    "esbenp.prettier-vscode",
+
+    // XML tools
+    "DotJoshJohnson.xml",
+
+    // JSON tools
+    "eriklynd.json-tools",
+    "octref.vscode-json-transform",
+
+    // Jest
+    "orta.vscode-jest",
+    "andys8.jest-snippets",
+
+    "yukai.map-replace-js",
+
+    "visualstudioexptteam.vscodeintellicode"
+  ]
+}

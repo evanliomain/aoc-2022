@@ -1,0 +1,38 @@
+{
+  "name": "aoc-2022",
+  "version": "1.0.0",
+  "aocYear": "2022",
+  "daysWithNoPoint": [],
+  "license": "MIT",
+  "scripts": {
+    "gen": "plop init",
+    "stats": "node ./scripts/stats.js --",
+    "start": "node ./scripts/run.js --",
+    "submit": "node ./scripts/submit.js --",
+    "rns": "node ./scripts/run-and-submit.js --",
+    "checker": "node ./scripts/check.js --",
+    "test": "node ./scripts/run-test.js --",
+    "jest": "jest",
+    "serve-photo": "http-server -p 666 ./photo"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "date-fns": "^2.7.0",
+    "node-dijkstra": "^2.5.0",
+    "ramda": "^0.27.1",
+    "request": "^2.88.0",
+    "taninsam": "^1.16.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.0.0",
+    "jest": "^26.6.3",
+    "node-html-parser": "^2.0.0",
+    "path-ast": "^1.1.0",
+    "plop": "^2.5.3",
+    "prettier": "^1.18.2",
+    "request-promise": "^4.2.5",
+    "rimraf": "^3.0.0",
+    "svg2png": "^4.1.1",
+    "vega": "^5.17.0"
+  }
+}
