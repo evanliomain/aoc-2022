@@ -43,3 +43,4 @@ module.exports.someMatrix = require('./some-matrix');
 module.exports.everyMatrix = require('./every-matrix');
 module.exports.reduceMatrix = require('./reduce-matrix');
 module.exports.gradient = require('./gradient');
+module.exports.pack = require('./pack');
