@@ -1,0 +1,20 @@
+$ cd /
+$ ls
+dir a
+10000000 b.txt
+dir d
+$ cd a
+$ ls
+dir e
+291160000 f
+$ cd e
+$ ls
+580 i
+$ cd ..
+$ cd ..
+$ cd d
+$ ls
+20 j
+dir e
+$ cd e
+40 gjroij.egr
