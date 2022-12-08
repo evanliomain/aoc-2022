@@ -12,14 +12,18 @@
   "editor.trimAutoWhitespace": false,
 
   "workbench.colorCustomizations": {
-    "activityBar.background": "#0f0f23",
     "titleBar.activeBackground": "#0f0f23",
-    "titleBar.activeForeground": "#009900",
-    "activityBar.activeBackground": "#cccccc",
+    "titleBar.activeForeground": "#9999cc",
+    "activityBar.background": "#0f0f23",
+    "activityBar.foreground": "#99ff99",
+    "activityBar.inactiveForeground": "#009900",
+    "activityBar.activeBackground": "#01461f",
     "activityBar.activeFocusBorder": "#ffff66",
-    "activityBar.foreground": "#0f0f23",
+    "activityBar.activeBorder": "#99ff99",
     "activityBarBadge.foreground": "#0f0f23",
     "activityBarBadge.background": "#ffff66",
-    "activityBar.inactiveForeground": "#009900",
+    "statusBar.background": "#0f0f23",
+    "statusBar.foreground": "#009900",
+    "statusBarItem.hoverBackground": "#d0b376",
   }
 }
