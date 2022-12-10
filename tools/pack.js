@@ -7,13 +7,13 @@
 module.exports = function pack(n) {
   return array => {
     if (!Array.isArray(array)) {
-      throw new Exception('Attempt to use pack on a non array ' + typeof array);
+      throw new Error('Attempt to use pack on a non array ' + typeof array);
     }
-    if (0 !== array.length % n) {
-      throw new Exception(
-        `Attempt pack an array by ${n}, but the array has a length of ${array.length}`
-      );
-    }
+    // if (0 !== array.length % n) {
+    //   throw new Error(
+    //     `Attempt pack an array by ${n}, but the array has a length of ${array.length}`
+    //   );
+    // }
     const result = [];
     for (let i = 0; i < array.length; i += n) {
       const paquet = [];
