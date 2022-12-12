@@ -15,18 +15,18 @@ module.exports = function atMatrix(matrix) {
   }
 
   return ({ x, y }) => {
-    if (!Array.isArray(matrix[y])) {
-      throw new Error(
-        `Attempt to acces the index to a non array matrix[0] ${typeof matrix[
-          y
-        ]}`
-      );
-    }
     if (0 === matrix.length) {
       return undefined;
     }
     if (y < 0 || matrix.length <= y) {
       return undefined;
+    }
+    if (!Array.isArray(matrix[y])) {
+      throw new Error(
+        `Attempt to acces the index to a non array matrix[${y}] ${typeof matrix[
+          y
+        ]}`
+      );
     }
     if (x < 0 || matrix[y].length <= x) {
       return undefined;
