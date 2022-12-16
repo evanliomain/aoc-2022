@@ -23,7 +23,7 @@ module.exports = function(plop) {
       {
         type: 'add',
         path: 'days/{{paddStart day}}/in.js',
-        templateFile: 'plop-templates/simple-function.hbs'
+        templateFile: 'plop-templates/in-function.hbs'
       },
       {
         type: 'add',
