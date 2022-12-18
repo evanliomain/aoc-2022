@@ -1,3 +1,8 @@
+/**
+ *
+ * @param  {...[match: S, rule:(x:S)=>T]} patterns
+ * @returns
+ */
 module.exports = function patternMatching(...patterns) {
   return input => {
     let i = 0;
