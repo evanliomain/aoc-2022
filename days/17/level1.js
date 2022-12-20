@@ -4,42 +4,9 @@ const { setToCoords } = require('./set-to-coords');
 const { stringToArray } = require('./string-to-array');
 const { pickAt } = require('./pick-at');
 const { isCollide } = require('./is-collide');
-const { serialize } = require('./serialize');
-
-const rocks = T.chain([
-  `
-..####
-`,
-  `
-...#.
-..###
-...#.
-`,
-  `
-....#
-....#
-..###
-`,
-  `
-..#
-..#
-..#
-..#
-`,
-  `
-..##
-..##
-`
-])
-  .chain(T.map(stringToArray))
-  .value();
-
-// |.......|
-// |.......|
-// |.......|
-const chamber = `
--------
-`;
+const { rocks } = require('./rocks');
+const { chamber } = require('./chamber');
+const { start, side, fall, addCoordsToSet } = require('./utils');
 
 const chamberSet = coordsToSet(stringToArray(chamber));
 
@@ -88,37 +55,4 @@ function falling(pickGas, pickRock) {
       r = rFall;
     }
   };
-}
-
-/**
- *
- * @param {number} top
- * @param {{x: number; y:number}[]} rock
- */
-function start(top, rock) {
-  return rock.map(({ x, y }) => ({ x, y: y + top + 4 }));
-}
-
-/**
- * @param {{x: number; y:number}[]} rock
- */
-function fall(rock) {
-  return rock.map(({ x, y }) => ({ x, y: y - 1 }));
-}
-/**
- * @param {-1|1} wind
- * @param {{x: number; y:number}[]} rock
- */
-function side(wind, rock) {
-  return rock.map(({ x, y }) => ({ x: x + wind, y }));
-}
-
-/**
- * @param {Set<string>} set
- * @param {{x:number, y: number}[]} coordinates
- */
-function addCoordsToSet(set, coordinates) {
-  for (const coordinate of coordinates) {
-    set.add(serialize(coordinate));
-  }
 }
