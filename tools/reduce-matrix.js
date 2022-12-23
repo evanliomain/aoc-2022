@@ -1,3 +1,9 @@
+/**
+ *
+ * @param {(accumulator: T, cell: any, x: number, y: number, matrix: any[][])=>T} reducer
+ * @param {T} start
+ * @returns the reduce element of the matrix
+ */
 module.exports = function reduceMatrix(reducer, start) {
   return matrix => {
     let accumulator = start;

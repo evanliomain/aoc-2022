@@ -1,5 +1,4 @@
 const T = require('taninsam');
-const { captureGroups, autoConvert } = require('../../tools');
 
 /**
  * Parse input of the day
@@ -8,5 +7,6 @@ const { captureGroups, autoConvert } = require('../../tools');
  */
 module.exports = function(input) {
   return T.chain(input)
+    .chain(T.map(T.split('')))
     .value();
 };
